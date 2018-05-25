@@ -1,0 +1,21 @@
+
+
+.page-top {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	/* padding: 11px; */
+/* background-color: #1fbba6; */	
+	background-color: #666;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	font-size: 21px;
+	-ms-filter: "alpha(opacity=80)";
+	-moz-opacity: 0.8;
+	-khtml-opacity: 0.8;
+	opacity: 0.8;
+Å@  color: #fff;
+	text-decoration:none;
+}
+
