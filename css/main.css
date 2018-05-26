@@ -204,3 +204,14 @@ ul.menu-mobile {
   display: none;    
 }
 
+/* scroll-parts */
+.div_scroll_btn{
+ width : 100%;
+ text-align: right;
+ padding-right: 10px;
+
+ /*
+ padding: 10px; 
+ background: red;
+ */
+}
