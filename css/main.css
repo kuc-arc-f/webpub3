@@ -1,6 +1,9 @@
 a{
 	color: inherit;
 }
+a:hover {
+  text-decoration: none;
+}
 
 #div_img_main2 h1{
   margin: 0px;
@@ -199,7 +202,17 @@ ul.menu {
 ul.menu {
   display: flex;
 }
+.mobile-child {
+    display: none;
+}
+/*
 ul.menu-mobile {
+  display: none;    
+}
+
+*/
+
+#nav-mobile{
   display: none;    
 }
 

@@ -5,9 +5,33 @@
 }
 
 /* nav */
+/*
+div#div_head p{
+  padding-top: 60px;
+}
+*/
 div > .menubar{
    display: none;
 }
+#nav-mobile{
+  display: block;
+  background :  #2196F3;
+  padding: 10px;
+}
+.mobile-menu-item{
+  padding:10px;
+  margin-bottom:5px;
+  color:white;
+  width: 100%;
+  font-size :16px;
+  text-align: left;
+  border: solid 1px white;
+  background: #2196F3;
+  :active {
+    background: darkgray;
+  }
+}
+/*
 ul.menu-mobile {
   margin: 0;
   padding: 0; 
@@ -23,7 +47,6 @@ ul.menu-mobile li {
   width: 100%;
   text-align: center;
   border: solid 1px white;
-/* background: grey; */
   background: #2196F3;
   :active {
     background: darkgray;
@@ -35,3 +58,4 @@ ul.menu-mobile a {
   height: 100%;
   display: block;
 }
+*/

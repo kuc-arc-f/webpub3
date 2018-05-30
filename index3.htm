@@ -24,7 +24,8 @@ div#div_head {
 }
 div#div_img_main2 {
 	height: 300px;
-	color: #1976D2;
+	/* color: #1976D2; */
+	color: #FFF;
 	margin: 0 0 0px;
 	width: 100%;
 	background:#ddd url(img/bill-2.jpg ) no-repeat center center;
@@ -34,9 +35,9 @@ div#div_img_main2 {
 
 </style>    
   </head>
-  <body style="background-color: #EEEEEE;">
+  <body class="drawer drawer--left" style="background-color: #EEEEEE;">
   <!-- T -->
-	<a href="#" class="page-top" style="color: #fff;"><img src="img/arrow_5.png" /></a>
+  	<a href="#" class="page-top" style="color: #fff;"><img src="img/arrow_5.png" /></a>
 	<div id="div_head" class="cover">
 	  <div class="container">
 	  <div class="row">
@@ -54,9 +55,6 @@ div#div_img_main2 {
 		    <li><a href='#id_row_company'>会社概要</a></li>
 		  </ul>
 		</div>
-	    <!--
-		  <span  class="p_head_str1" style="float :left;">営業時間:</span><p>9:00 ～ 17:00</p>
-	     -->
 	    </div>
 	  </div>
 	  
@@ -65,12 +63,28 @@ div#div_img_main2 {
 <!-- nav -->
 <!-- container_top -->
 	<div id="div_img_main2"  class="cover" style="" valign="bottom">
-	<div id="div_img_layer_w">
+	<div id="div_img_layer">
 		<h1>ホームページ、LP作成<br />
 		おまかせ下さい
 		</h1>
 	</div>
 	</div>
+<!-- mobile-nav -->
+<div id="nav-mobile" style="width:100%;">
+	<a class="toggle">
+	 <span class="glyphicon glyphicon-menu-hamburger" style="font-size: 34px; color: #FFF"></span>
+	</a>
+	<div class="mobile-child">
+		<div class="mobile-menu-item" style=""><a href="#id_row_service">サービス概要</a></div>
+		<div class="mobile-menu-item" style=""><a href="#demo01" style="margin-left:20px;">MENU-1</a></div>
+		<div class="mobile-menu-item" style=""><a href="#id_row_sample">導入事例</a></div>
+		<div class="mobile-menu-item" style=""><a href="#id_row_info"  >お知らせ</a></div>
+		<div class="mobile-menu-item" style=""><a href="#id_row_price"  >価格</a></div>
+		<div class="mobile-menu-item" style=""><a href="#id_row_company"  >会社概要</a></div>
+	</div>
+</div>
+<!--
+margin-left:20px;
       <ul class='menu-mobile'>
         <li><a href='#id_row_service'>サービス概要</a></li>
         <li><a href='#id_row_sample'>導入事例</a></li>
@@ -78,7 +92,8 @@ div#div_img_main2 {
         <li><a href='#id_row_price'>価格</a></li>
         <li><a href='#id_row_company'>会社概要</a></li>
       </ul>
-
+ -->
+  
 <!-- conte-mid -->
 <div class="container" id="id_main_conte">
 <div class="row conte" id="id_row_service" style="margin-top:10px;">
@@ -179,7 +194,8 @@ div#div_img_main2 {
 	</div>
 	</div>
 </div>
-<div id="id_row_info" class="row conte" style="margin-top:10px;">
+<!-- -->
+<div id="id_row_info" class="row conte" style="">
 	<div class="col-sm-6">
 		<div style="padding:20px; text-align:center;">
 		<img class="img_kao" id="id_tst3" src="img/rep1.png" >
@@ -192,23 +208,6 @@ div#div_img_main2 {
 		<a href="#" class="btn btn-default">詳細はこちら >> </a>	
 		</div>
 	</div>
-	<!--
-	<table border="0" width="100%">
-	<tr>
-	<td>
-	<img id="id_tst3" src="img/bus0011-001.jpg" style="max-width : 100%; max-height: 240px; min-height:100px; ">
-	</img>
-	</td>
-	<td class="td_mid_text" width="50%">
-	
-	  <h2 class="h4_td_title">お知らせ</h2>
-	  <br />
-	  <p>お知らせ情報となります。</p>
-	  <a href="#" class="btn btn-default">詳細はこちら >> </a>
-	</td>
-	</tr>
-	</table>
-	 -->
 </div>
 
 <!-- -->
@@ -300,25 +299,6 @@ div#div_img_main2 {
 		<a href="#" class="btn btn-default">詳細はこちら >> </a>	
 		</div>
 	</div>
-<!--
-	<div class="col-sm-12">
-	<table border="0" width="100%">
-	<tr>
-	<td>
-	<img id="id_tst3" src="img/bus0011-001.jpg" style="max-width : 100%; max-height: 240px; min-height:100px; ">
-	</img>
-	</td>
-	<td class="td_mid_text" width="50%">
-	  <h2 class="h4_td_title">会社概要</h2>
-	  <br />
-	  <p> </p>
-	  <a href="#" class="btn btn-default">詳細はこちら >> </a>
-	</td>
-	</tr>
-	</table>
-
-	</div>
- -->
 </div>
 <!-- -->
 <div class="row conte" style="margin-top:10px;">
@@ -368,6 +348,12 @@ div#div_img_main2 {
  <p class="p_foot_str">Contact</p>
  <p class="p_foot_str">運営組織</p>
 </div>
+<script>
+function demo01() {
+  $(this).next().slideToggle(300);
+}
+$(".toggle").click(demo01);
+</script>
 <script src="js/top_scroll.js"></script>
 </body>
 </html>

@@ -22,13 +22,12 @@ a li_a_menu:visited{
  color:white
 }
 
-/*
 a:hover{
  color:white;
  padding-bottom:3px;
  border-bottom:2px solid white;
 }
-*/
+
 .menu-mobile a{
 	border-bottom:0
 }
